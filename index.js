@@ -93,9 +93,24 @@ Car.prototype.fill=function(gallons){
     - Besides the methods on Person.prototype, babies have the ability to `.play()`:
         + Should return a string "Playing with x", x being the favorite toy.
 */
-function Baby() {
+//Example of subclassing
+// function EnlistBlackKnight(battleWisdom1,battleWisdom2){
+//   EnlistKnight.call(this,"Black Knight","Sword","Losing limbs");
+//   this.wisdom1=battleWisdom1;
+//   this.wisdom2=battleWisdom2;
+// }//note that .call does NOT include methods
+// EnlistBlackKnight.prototype= Object.create(EnlistKnight.prototype);//this allows enlist black knight to inheret knight info
 
-}
+
+// Baby.prototype= Object.create(Person.prototype);
+// function Baby(favoriteToy) {
+//     Person.call(this,'name','age');
+//     this.favoriteToy=favoriteToy;
+// }
+// Baby.prototype.play=function(){
+//   return `Playing with ${this.favoriteToy}`;
+// }
+
 
 /* 
   TASK 4
